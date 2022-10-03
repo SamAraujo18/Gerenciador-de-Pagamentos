@@ -20,14 +20,14 @@ forma = input('Selecione a forma de pagamento: ')
 print('')
 if forma == '1':
     print(f'O Valor do produto á vista no dinheiro/cheque vai ficar em torno de \033[1;92mR${preco - (preco * 10/100):.2f}\033[m')
-if forma == '2':
+elif forma == '2':
     print(f'O Valor do produto á vista no cartão vai ficar em torno de \033[1;92mR${preco - (preco * 5/100):.2f}\033[m')
-if forma == '3':
+elif forma == '3':
     print(f'O Valor do produto em até 2x no cartão vai ficar em torno de \033[1;92mR${preco:.2f}\033[m no valor total')
-if forma == '4':
+elif forma == '4':
     parcela = int(input('Quantas parcelas? '))
     precocjuros = preco + (preco * 20 / 100)
     print(f'Sua compra sera parcelada em até \033[1;97m{parcela}x\033[m de \033[1;92mR${precocjuros / parcela:.2f}\033[m mensais.')
-    print(f'O produto vai custar \033[1;92mR${precocjuros:.2f}\033[m no valor final do mesmo.')
-if forma >= '5':
+    print(f'O produto vai custar \033[1;92mR${precocjuros:.2f}\033[m no valor final.')
+else:
     print('FORMA DE PAGAMENTO INVÁLIDA!!')
