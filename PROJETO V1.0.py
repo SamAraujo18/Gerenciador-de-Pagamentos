@@ -30,4 +30,4 @@ elif forma == '4':
     print(f'Sua compra sera parcelada em até \033[1;97m{parcela}x\033[m de \033[1;92mR${precocjuros / parcela:.2f}\033[m mensais.')
     print(f'O produto vai custar \033[1;92mR${precocjuros:.2f}\033[m no valor final.')
 else:
-    print('FORMA DE PAGAMENTO INVÁLIDA!!')
+    print('\033[1;91mFORMA DE PAGAMENTO INVÁLIDA!!\033[m')
