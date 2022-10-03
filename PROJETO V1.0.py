@@ -26,7 +26,8 @@ if forma == '3':
     print(f'O Valor do produto em até 2x no cartão vai ficar em torno de \033[1;92mR${preco:.2f}\033[m no valor total')
 if forma == '4':
     parcela = int(input('Quantas parcelas? '))
-    print(f'Sua compra sera parcelada em até \033[1;97m{parcela}x\033[m de \033[1;92mR${parcela/100 * (preco + (preco * 20 / 100)):.2f}\033[m')
-    print(f'O produto vai custar \033[1;92mR${preco + (preco * 20 / 100):.2f}\033[m no valor final')
+    precocjuros = preco + (preco * 20 / 100)
+    print(f'Sua compra sera parcelada em até \033[1;97m{parcela}x\033[m de \033[1;92mR${precocjuros / parcela:.2f}\033[m mensais.')
+    print(f'O produto vai custar \033[1;92mR${precocjuros:.2f}\033[m no valor final do mesmo.')
 if forma >= '5':
     print('FORMA DE PAGAMENTO INVÁLIDA!!')
