@@ -21,10 +21,10 @@ print('')
 if forma == '1':
     print(f'O Valor do produto á vista no dinheiro/cheque vai ficar em torno de \033[1;92mR${preco - (preco * 10/100):.2f}\033[m')
 elif forma == '2':
-    print(f'O Valor do produto em até \033[1;92mR${(preco - (preco * 5/100)) / 2:.2f}\033[m')
     print(f'O Valor do produto á vista no cartão vai ficar em torno de \033[1;92mR${preco - (preco * 5/100):.2f}\033[m')
 
 elif forma == '3':
+    print(f'O Valor do produto em até 2x no cartão vai ficar \033[1;92mR${preco / 2:.2f}\033[m mensais.')
     print(f'O Valor do produto em até 2x no cartão vai ficar em torno de \033[1;92mR${preco:.2f}\033[m no valor total')
 elif forma == '4':
     parcela = int(input('Quantas parcelas? '))
